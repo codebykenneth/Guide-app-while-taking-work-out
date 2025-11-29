@@ -1,0 +1,20 @@
+ body{
+        background-image: url('bg/men\ fitness.jpg');
+        background-size:cover
+        background-position: center;
+        font-family: Arial, sans-serif;
+ }
+    
+h1{
+        font-size:20px;
+        text-align: center;
+        color:darkred;
+        
+        }
+p
+     { 
+            font-size: 15px;
+            text-align: center;
+            color:black;
+
+        }
