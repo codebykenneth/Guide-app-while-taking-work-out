@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide App While Taking WORK OUT</title>
-
-    <link rel="stylesheet"href=style.css>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Safety-first workout guide with warmups, form tips and cool-down routines.">
+    <title>Guide — Safe Workout App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#">Guide<span class="accent">Fit</span></a>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#tips">Tips</a>
+                <a class="btn small" href="#get-started">Get Started</a>
+            </nav>
+        </div>
+    </header>
 
-<div class="h1">
-    <h1>GUIDE APP TO SAFETY WORKOUT.</h1>
-   <div class="p">
-    <p> This App will provide you the safety way to prevent you from causing
-    injury while doing workout. It will guide<br>
-    you with proper warm-up exercises, and cool-down routines, as well as tips on maintaining correct form during
-     various exercises.
-    </p>
-   </div>
-</div>
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h1>Train Smarter. Stay Safe.</h1>
+                    <p class="lead">Guided warm-ups, form cues, and cooldown routines to reduce injury and get the most from every workout.</p>
+                    <p class="actions">
+                        <a href="#get-started" class="btn primary">Start Guided Session</a>
+                        <a href="#features" class="btn ghost">See Features</a>
+                    </p>
+                </div>
+                <div class="hero-card" aria-hidden="true">
+                    <div class="card">
+                        <h3>Quick Warm-Up</h3>
+                        <p>3-minute routines to prepare your body.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container features">
+            <h2 class="section-title">What You Get</h2>
+            <div class="grid">
+                <article class="feature">
+                    <div class="icon">🏃</div>
+                    <h3>Structured Warm-ups</h3>
+                    <p>Dynamic sequences tailored to your workout type.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">💪</div>
+                    <h3>Form Guidance</h3>
+                    <p>Step-by-step cues to protect joints and improve performance.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">🧘</div>
+                    <h3>Cooldowns & Mobility</h3>
+                    <p>Recovery routines to reduce soreness and aid flexibility.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> GuideFit — Built for safe training.</p>
+            <p class="small">Images and tips are for guidance only. Consult a professional for medical advice.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Small JS to update year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
